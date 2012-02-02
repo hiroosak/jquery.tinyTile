@@ -1,3 +1,4 @@
 # TinyTile jQuery plugin
 
-[sample] hiroosak.github.com/jquery.tinyTile/sample/board.html
+[js] (http://hiroosak.github.com/jquery.tinyTile/src/jquery.tinyTile.js)
+[sample] (http://hiroosak.github.com/jquery.tinyTile/sample/example.html)
