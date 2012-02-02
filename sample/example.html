@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../src/jquery.tinyTile.js"></script>
+<script src="http://yandex.st/highlightjs/6.1/highlight.min.js"></script>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/6.1/styles/default.min.css">
+<style type="text/css">
+
+body {
+margin: 32px auto;
+font-family: "HiraMinProN-W3, helvetica neue,arial,sans-serif";
+width: 800px;
+}
+
+.row {
+background-color: #ccc;
+}
+
+#tile-fill {
+height: 500px;
+padding: 20px;
+border: 1px solid #ccc;
+}
+
+#tile {
+white-space:normal;
+}
+
+pre code {
+font-size: large;
+padding: 30px;
+}
+
+#tile > div {
+-webkit-box-shadow: 1px 1px 3px #ad9c9c;
+-moz-box-shadow: 1px 1px 3px #ad9c9c;
+background-color: #f2f0f0;
+padding: 8px;
+}
+
+.thumbnail {
+text-align: center;
+}
+.thumbnail img{
+height: 100px;
+}
+
+#tile2 > div {
+height: 150px;
+}
+
+#tile2 > div > img{
+height: 100px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Sample</h1>
+
+<h2>1. Board</h2>
+
+<div id="tile-fill">
+  <div id="tile">
+    <div class="row">
+      <div class="thumbnail"><img src="sample1.jpg"></div>
+      photo
+    </div>
+    <div class="row">aaaaaaaaaa</div>
+    <div class="row">cccc</div>
+    <div class="row">
+      <div class="thumbnail"><img src="sample2.jpg"></div>
+      photo
+    </div>
+    <div class="row">dddddddddddddd dddddddddddddddddd dd</div>
+    <div class="row">aaaa</div>
+    <div class="row">bbbb</div>
+    <div class="row">cccc</div>
+    <div class="row">ddd ddddddddddd dddddddddddddddddd dd</div>
+    <div class="row">aaaa</div>
+    <div class="row">bbbb</div>
+    <div class="row">cccc</div>
+    <div class="row">dddddd dddddddd dddddddddddddddddd dd</div>
+    <div class="row">
+      <div class="thumbnail"><img src="sample3.jpg"></div>
+      photo
+    </div>
+    <div class="row">bbbb</div>
+    <div class="row">ccccjeijeoe</div>
+    <div class="row">aaaa f</div>
+    <div class="row">bbb ijeoeo b</div>
+    <div class="row">aaaa</div>
+    <div class="row">dddddddddddddd dddddddddddddddddd dd</div>
+    <div class="row">bbbb</div>
+  </div>
+</div>
+<h3>code</h3>
+<pre><code class="javascript">$(function() {
+  $("div#tile").tinyTile();
+});
+</code></pre>
+<h2>2. Photo Panel</h2>
+
+<div id="tile2">
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+  <div style="background-image: url(sample2.jpg); "></div>
+  <div style="background-image: url(sample3.jpg); "></div>
+  <div style="background-image: url(sample1.jpg); "></div>
+</div>
+
+<h3>code</h3>
+
+<pre><code class="javascript">$(function() {
+  $("div#tile2").tinyTile({
+    row: 5,
+    gutter: 0
+  });
+};
+</code></pre>
+
+<script type="text/javascript">
+$(function() {
+  $("div#tile").tinyTile();
+  $("div#tile2").tinyTile({
+    row: 5,
+    gutter: 0
+  });
+  hljs.initHighlightingOnLoad();
+});
+</script>
+</body>
+</html>
