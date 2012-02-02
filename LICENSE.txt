@@ -1,0 +1,1 @@
+TinyTile jQuery plugin is licensed under the terms of either the MIT License or the GPL Version 2 License.
